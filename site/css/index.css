@@ -1,0 +1,565 @@
+:root {
+    --main-color: #90EE90;
+    --white: #FFFFFF;
+    --black: #000000;
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #a7dfae 0%, #69b494 50%, #164727 100%);
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #FFFFFF;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    border-bottom: 0.2rem solid rgba(31, 120, 50, 1); 
+    height: 110px;
+}
+
+.acesso {
+    background: #164727;
+    color: #FFFFFF;
+    padding: 1rem 3rem;
+    font-size: 2.0rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 2rem;
+}
+
+.acesso:hover {
+    background-color: var(--main-color);
+}
+
+.header section {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.4rem; 
+    padding-bottom: 1.4rem; 
+}
+
+.icones-container {
+    display: flex;
+    gap: 1.5rem; 
+    justify-content: center; 
+}
+
+.icones-container img {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease;
+}
+
+.icone-busca:hover {
+    content: url("https://img.icons8.com/external-kmg-design-detailed-outline-kmg-design/64/90EE90/external-search-love-kmg-design-detailed-outline-kmg-design.png");
+    width: 52px;
+    height: 52px;  
+}
+
+.icone-perfil:hover {
+    content: url("https://img.icons8.com/doodle-line/60/90EE90/user.png");
+    width: 52px;  
+    height: 52px;
+}
+
+.navegar a {
+    font-size: 1.8rem;
+    color: #006400;
+    margin: 0 1rem;
+    font-family: "DynaPuff", system-ui;
+}
+
+.navegar a:hover {
+    color: var(--main-color);
+    font-size: 2.0rem;
+    transition: all 0.3s ease; 
+    }
+
+.fundo {
+    background-color: rgba(255, 255, 255, 0.5); 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    border-radius: 10px;
+    margin-top: 120px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px; 
+    max-width: 1000px;
+    min-height: 450px;
+}
+
+.bloco-texto h3 {
+    color: #164727;
+    font-size: 2rem;
+    font-family: "DynaPuff", system-ui, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.texto-apresentacao {
+    font-family: "Gelasio", serif;
+    font-size: 1.2rem;
+    color: var(--black);
+    line-height: 1.6; 
+}
+
+.coluna {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.img-dogs, .bloco-texto {
+    flex: 1; 
+}
+
+.mascote {
+    border-radius: 10px;
+    width: 600px;
+    object-fit: cover;
+    height: auto;
+    max-height: none;
+    margin-top: 45px;
+    margin-left: 0;
+}
+
+.balao-perfil {
+    position: absolute;
+    top: 65px; 
+    right: 0;
+    background-color: var(--white);
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 50px;
+    width: 300px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    z-index: 999; 
+    display: none; 
+}
+
+.balao-perfil.ativo {
+    display: block; 
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column; 
+    align-items: stretch;   
+    font-family: "DynaPuff", system-ui, sans-serif;
+}
+
+.form-login h4 {
+    margin: 0 0 16px 0;    
+    color: #164727;        
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-align: center;    
+}
+
+.form-login label {
+    font-size: 0.85rem;
+    color: var(--black);
+    font-weight: 500;
+    margin-bottom: 6px;    
+    text-align: left;      
+}
+
+.form-login input {
+    padding: 10px 12px;
+    margin-bottom: 16px;   
+    border: 1px solid #164727;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background-color: #fafafa;
+    outline: none;         
+    transition: all 0.2s ease; 
+}
+
+.form-login input:focus {
+    border-color: #164727;
+    background-color: var(--white);
+    box-shadow: 0 0 0 2px rgba(22, 71, 39, 0.1); 
+}
+
+.btn-entrar {
+    background-color: #164727;
+    color: var(--white);
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 4px;      
+    transition: background-color 0.2s ease;
+}
+
+.btn-entrar:hover {
+    background-color: var(--main-color);
+}
+
+.link-cadastro {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #000000;
+    margin-top: 16px;      
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.link-cadastro:hover {
+    color: var(--main-color);
+    text-decoration: underline; 
+}
+
+.noticias-con {
+    position: relative;
+    width: 90%;
+    max-width: 1100px;     
+    margin: 40px auto 0;  
+    color: var(--main-color);
+}
+
+.noticia-car {
+    display: none; 
+    width: 100%;
+}
+
+.noticia-car.ativa {
+    display: block; 
+}
+
+.img-not {
+    position: relative;
+    width: 100%;
+    height: 350px;        
+    border-radius: 10px;  
+    overflow: hidden;     
+}
+
+.img-not img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto-sobreposto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 24px;          
+    background-color: rgba(92, 115, 87, 0.75); 
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: bold;
+}
+
+.texto-sobreposto .noticia {
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.texto-sobreposto h4 {
+    color: var(--white);
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.texto-sobreposto p {
+    color: var(--white);
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.texto-sobreposto a {
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 4px;
+}
+
+.btn-roleta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10; 
+    transition: background-color 0.2s;
+}
+
+.btn-roleta:hover {
+    background-color: rgba(63, 100, 63, 0.8); 
+}
+
+.btn-esq { left: 10px; }
+.btn-dir { right: 10px; }
+
+.introducao-adocao {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-image: url('/site/images/pequenas-patas-de-gato-padrao-sem-costura_840036-1465.jpg');
+    border-left: 5px solid var(--main-color); 
+    border-radius: 4px;
+    margin-top: 50px;
+}
+
+
+.introducao-adocao h2 {
+    margin: 0 0 5px 0;
+    color: #164727;
+   font-family: "DynaPuff", system-ui, sans-serif;
+}
+
+.introducao-adocao p {
+    margin: 0;
+    color: #000000;
+}
+
+.adocao-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+    margin-bottom: 20px;
+    padding-left: 60px;
+   
+}
+
+.pet-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 200px;
+    overflow: hidden; 
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
+    background-color: var(--white);
+}
+
+.pet-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+}
+
+.pet-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.pet-info h3 {
+    margin: 0 0 10px 0;
+    color: #222;
+}
+
+.pet-info p {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.btn-adotar {
+    background-color: #164727;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn-adotar:hover {
+    background-color: var(--main-color); 
+}
+
+.titulo-cadastro h2{
+   font-family: "DynaPuff", system-ui, sans-serif;
+   color: #164727;
+}
+.container-inscricao-apoio {
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+    text-align: center; 
+}
+
+
+.titulo-bloco {
+    color: #164727;
+    font-family: "DynaPuff", system-ui, sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.form-cadastro {
+    display: inline-block;
+    vertical-align: top;
+    width: 44%;           
+    min-width: 290px;
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-right: 5%;     
+    text-align: left;     
+    box-sizing: border-box;
+}
+
+.grupo-campo {
+    margin-bottom: 15px;  
+    text-align: left;
+}
+
+.grupo-campo label {
+    display: block;       
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #164727;
+    margin-bottom: 5px;   
+}
+
+.grupo-campo input, 
+.grupo-campo select, 
+.grupo-campo textarea {
+    display: block;
+    width: 100%;             
+    padding: 8px;            
+    border: 1px solid #ccc;  
+    border-radius: 5px;
+    box-sizing: border-box;  
+}
+
+.botao-enviar {
+    display: flex;
+    width: 200px;
+    padding: 10px;
+    background-color: #164727;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+   justify-content: center;
+}
+
+.card-doacao {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;           
+    min-width: 290px;
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.texto-doacao {
+    font-size: 1.3rem;
+    color: var(--black);
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding-bottom: 35px;
+}
+
+.qrcode-container {
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 1px dashed #164727;
+}
+
+.img-qrcode {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.qrcode-container span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #164727;
+}
+
+.chave-pix {
+    text-align: left;
+}
+
+.chave-pix label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--black);
+    margin-top: 20px;
+}
+
+.chave-pix input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    background-color: var(--white);
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #164727;
+    box-sizing: border-box;
+}
+
+.rodape {
+    background-color: #164727; 
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-family: "Gelasio", serif;
+    margin-top: 50px;
+}
+

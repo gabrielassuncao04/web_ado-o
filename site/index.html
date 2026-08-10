@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <title>Vira-Lata Sortudo</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <section>
+            <a href="#" class="logo">
+                <img src="./images/logo.jpg" alt="logo" style="height: 90px;">
+            </a>
+
+            <nav class="navegar">
+                <a href="#home">Conheça Nossa Causa</a>
+                <a href="#notici">Novidades</a>
+                <a href="#adocao">Adoção</a>
+                <a href="#cadastro">Seja Uma Ong Parceira</a>
+            </nav>
+
+            <div class="icones-container">
+                <img class="icone-busca"
+                    src="https://img.icons8.com/external-kmg-design-detailed-outline-kmg-design/64/006400/external-search-love-kmg-design-detailed-outline-kmg-design.png"
+                    alt="Procurar" />
+
+                <div class="perfil-selecao" style="position: relative; display: inline-block;">
+                    <img class="icone-perfil" id="bl-perfil" style="cursor: pointer;"
+                        src="https://img.icons8.com/doodle-line/60/006400/user.png" alt="Perfil" />
+
+                    <span class="balao-perfil" id="balao-login">
+                        <form class="form-login">
+                            <h4>Acessar Conta</h4>
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" placeholder="seu@email.com" required>
+
+                            <label for="senha">Senha:</label>
+                            <input type="password" id="senha" placeholder="Sua senha" required>
+
+                            <button type="submit" class="btn-entrar">Entrar</button>
+                            <a href="#cadastro" class="link-cadastro">Criar uma conta</a>
+                        </form>
+                    </span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="fundo">
+        
+        <div class="Apresentacao">
+            <section id="home" class="coluna">
+                <div class="img-dogs">
+                    <img src="./images/amigos_pets.jpg" alt="Silveirinha" class="mascote">
+                </div>
+
+                <div class="bloco-texto">
+                    <h3>Adote com amor, cuide com responsabilidade: conheça nossa causa</h3>
+                    <p class="texto-apresentacao">
+                        Au au, que bom que você clicou aqui! Senta aí (e dá a patinha!) que eu vou te contar a história
+                        de como nós, os doguinhos e gatinhos do mundo, decidimos dominar a internet por uma causa nobre.
+                        <br><br>
+                        Nós criamos o Vira-Lata Sortudo porque cansa demais ter que fazer aquela cara de coitado na rua
+                        para conseguir um pedaço de pão, sabe? A verdade é que as ONGs e os protetores independentes são
+                        os nossos heróis de duas patas eles nos resgatam, limpam nossos machucados e dão um teto para a
+                        gente dormir, substituindo e ajudando abrigos lotados.
+                        <br><br>
+                        Mas ó, o nosso plano vai muito além de achar um sofá quentinho para eu tirar meus cochilos. O
+                        nosso site tem uma missão social gigantesca: a gente quer educar os humanos! Cuidar de nós
+                        também é cuidar da saúde e do coração da sociedade inteira.
+                        <br><br>
+                        Então, navega pelo site com carinho, apoia uma ONG, adota um melhor amigo e ajuda a transformar
+                        a nossa vida. Lambe-lambes de gratidão e au au!
+                    </p>
+                    <a href="#" class="acesso manutencao"> Quero Ajudar </a>
+                </div>
+            </section>
+        </div>
+
+        <div class="noticias-con" id="notici">
+            <article class="noticia-car ativa">
+                <div class="img-not">
+                    <img src="./images/vacinação.jpg" alt="Vacinação">
+                    <div class="texto-sobreposto">
+                        <span class="noticia">Saúde Pet</span>
+                        <h4>Campanha de Vacinação Contra a Raiva 🐾</h4>
+                        <p>Quem ama, protege! Traga seu cão ou gato para garantir a dose anual contra a raiva. A vacinação é gratuita.</p>
+                        <a href="#" class="manutencao">Ver pontos de vacinação</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="noticia-car">
+                <div class="img-not">
+                    <img src="./images/castra.jpeg" alt="Castração">
+                    <div class="texto-sobreposto">
+                        <span class="noticia">Controle Social</span>
+                        <h4>Mutirão de Castração Solidária</h4>
+                        <p>A castração previne doenças e evita o abandono. Inscrições abertas para o próximo mutirão gratuito.</p>
+                        <a href="#" class="manutencao">Inscrever meu pet</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="noticia-car">
+                <div class="img-not">
+                    <img src="./images/veteri-parceira.jpg" alt="Parceiros">
+                    <div class="texto-sobreposto">
+                        <span class="noticia">Parcerias</span>
+                        <h4>Promoções com Clínicas Parceiras!</h4>
+                        <p>Adote um pet pelo site e ganhe 20% de desconto na primeira consulta com nossos parceiros.</p>
+                        <a href="#" class="manutencao">Conhecer clínicas</a>
+                    </div>
+                </div>
+            </article>
+            
+            <button class="btn-roleta btn-esq" id="btn-prev">&#10094;</button>
+            <button class="btn-roleta btn-dir" id="btn-next">&#10095;</button>
+        </div> <div class="introducao-adocao">
+            <h2>Nossos Cãezinhos para Adoção</h2>
+            <p>Encontre um amigo de quatro patas pronto para receber amor!</p>
+        </div>
+
+        <section class="adocao-container" id="adocao">
+            <div class="pet-card">
+                <img src="./images/634446128_2933531773524235_5620183380259957908_n.jpg" alt="Foto da Mel" class="pet-img">
+                <div class="pet-info">
+                    <h3>Mel</h3>
+                    <p>Fêmea • Porte Pequeno • 2 anos</p>
+                    <a href="#" class="btn-adotar manutencao">Quero Adotar</a>
+                </div>
+            </div>
+
+            <div class="pet-card">
+                <img src="./images/623371162_2914846925392720_1812550793638776914_n.jpg" alt="Foto do Pipoca" class="pet-img">
+                <div class="pet-info">
+                    <h3>Pipoca</h3>
+                    <p>Macho • Porte Médio • 1 ano</p>
+                    <a href="#" class="btn-adotar manutencao">Quero Adotar</a>
+                </div>
+            </div>
+
+            <div class="pet-card">
+                <img src="./images/629413480_122157866840903876_4587118750910669072_n.jpg" alt="Foto do Xavier" class="pet-img">
+                <div class="pet-info">
+                    <h3>Xavier</h3>
+                    <p>Macho • Porte Grande • 8 anos</p>
+                    <a href="#" class="btn-adotar manutencao">Quero Adotar</a>
+                </div>
+            </div>
+
+            <div class="pet-card">
+                <img src="./images/469182613_588944446962421_6217108343086825262_n.jpg" alt="Foto do Thor" class="pet-img">
+                <div class="pet-info">
+                    <h3>Thor</h3>
+                    <p>Macho • Porte Pequeno • 4 meses</p>
+                    <a href="#" class="btn-adotar manutencao">Quero Adotar</a>
+                </div>
+            </div>
+        <div class="titulo-cadastro" id="cadastro">
+    <h2>Seja um Parceiro ou Apoie Nossa Causa</h2>
+    <p>Preencha o formulário para se inscrever ou faça uma doação via QR Code!</p>
+</div>
+
+<div class="container-inscricao-apoio">
+
+    <form class="form-cadastro">
+        <h3 class="titulo-bloco">Cadastro de Parceiros</h3>
+        
+        <div class="grupo-campo">
+            <label>Nome ou Nome da ONG:</label>
+            <input type="text" placeholder="Digite aqui" required>
+        </div>
+
+        <div class="grupo-campo">
+            <label>E-mail:</label>
+            <input type="email" placeholder="seu@email.com" required>
+        </div>
+
+        <div class="grupo-campo">
+            <label>Telefone:</label>
+            <input type="text" placeholder="(00) 00000-0000" required>
+        </div>
+
+        <div class="grupo-campo">
+            <label>Tipo de Parceiro:</label>
+            <select required>
+                <option value="">Escolha uma opção</option>
+                <option value="vet">Veterinário</option>
+                <option value="ong">ONG</option>
+            </select>
+        </div>
+
+        <div class="grupo-campo">
+            <label>Como quer ajudar?</label>
+            <textarea rows="4" placeholder="Descreva brevemente..."></textarea>
+        </div>
+
+        <a type="submit" class="botao-enviar manutencao">Enviar Inscrição</a>
+    </form>
+
+    <div class="card-doacao">
+        <h3 class="titulo-bloco">Ajude com um Pix 🐾</h3>
+        <p class="texto-doacao">
+            Seja você um veterinário, uma ONG ou um apoiador, sua doação ajuda a manter nossos mutirões e resgates ativos!
+        </p>
+        
+        <div class="qrcode-container">
+            <img src="./images/imagem_qrcode_exemplo.jpg" alt="QR Code Pix" class="img-qrcode">
+            <span>Escaneie para doar</span>
+        </div>
+
+        <div class="chave-pix">
+            <label>Chave Pix (E-mail):</label>
+            <input type="text" value="doe@viralatasortudo.org" readonly>
+        </div>
+    </div>
+</div>
+
+    </div> <script src="js/index.js"></script>
+
+    
+    <footer class="rodape">
+    <p>&copy; 2026 Vira-Lata Sortudo. Desenvolvido para fins acadêmicos - 1º Semestre.</p>
+    <p>Contato: apoie@viralatasortudo.org</p>
+</footer>
+</body>
+</html>
+
